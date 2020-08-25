@@ -29,6 +29,8 @@ mix.tailwind();
 
 mix.js('assets/js/app.js', 'js');
 mix.sass('assets/scss/app.scss', 'css');
+mix.copyDirectory('assets/img/', 'build/img');
+mix.copyDirectory('assets/fonts/', 'build/fonts');
 
 // The package internally limits running to production builds so we don't need
 // to wrap this up with a condition.
